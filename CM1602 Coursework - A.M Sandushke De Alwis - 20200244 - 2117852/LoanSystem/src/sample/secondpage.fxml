@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <center>
+        <AnchorPane prefHeight="349.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="504.0" fitWidth="805.0" layoutX="24.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@secondpagebg.jpg" />
+                    </image>
+                </ImageView>
+                <Button fx:id="backButton" layoutX="389.0" layoutY="539.0" mnemonicParsing="false" onAction="#page2_backButton" prefHeight="30.0" prefWidth="90.0" text="Back">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Button>
+            <Button fx:id="normalCustomerButton" layoutX="454.0" layoutY="310.0" mnemonicParsing="false" onAction="#secondPage" prefHeight="39.0" prefWidth="219.0" text="Normal Customer">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="innerCustomerButton" layoutX="454.0" layoutY="365.0" mnemonicParsing="false" onAction="#secondPage2" prefHeight="39.0" prefWidth="219.0" text="Inner Customer">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="highCustomerButton" layoutX="454.0" layoutY="426.0" mnemonicParsing="false" onAction="#secondPage3" prefHeight="39.0" prefWidth="219.0" text="High priority Customer">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

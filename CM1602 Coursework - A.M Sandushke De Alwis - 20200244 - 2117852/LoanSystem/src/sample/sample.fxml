@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+        <AnchorPane prefHeight="349.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="411.0" fitWidth="908.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@backgroundImage.jpg" />
+                    </image>
+                </ImageView>
+            <Button fx:id="playNextButton" layoutX="548.0" layoutY="395.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="30.0" prefWidth="90.0" text="Next">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <TextField blendMode="MULTIPLY" depthTest="DISABLE" layoutX="353.0" layoutY="219.0" prefHeight="50.0" prefWidth="333.0" text="         Hatton National Bank">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="quitButton" layoutX="340.0" layoutY="395.0" mnemonicParsing="false" onAction="#viewClosePage" prefHeight="30.0" prefWidth="90.0" text="Close">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+   </center>
+</BorderPane>
